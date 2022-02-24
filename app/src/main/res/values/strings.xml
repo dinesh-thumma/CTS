@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">CTS</string>
+    <string name="button">Button</string>
+    <string name="todo">TODO</string>
+    <string-array name="data">
+        <item>Suspected</item>
+        <item>Infected</item>
+        <item>Recovered</item>
+        <item>Normal</item>
+    </string-array>
+</resources>

@@ -1,0 +1,644 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B2CFDC"
+    android:paddingLeft="5dp"
+    tools:context=".Symptoms"
+    android:paddingStart="5dp"
+    tools:ignore="RtlSymmetry">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/yellow"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:weightSum="10"
+        android:paddingStart="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="403dp"
+                android:layout_height="95dp"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:text="please click on symptons you have"
+                android:textAllCaps="true"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#FFFDFD"
+                android:textColorHighlight="#F1E9E9"
+                android:textStyle="bold"
+                android:visibility="visible"
+                android:paddingStart="5dp"
+                tools:ignore="HardcodedText" />
+        </RelativeLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/textView2"
+            android:animateLayoutChanges="true"
+            android:columnCount="2"
+            android:rowCount="10"
+            tools:ignore="ObsoleteLayoutParam">
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/c1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_rowWeight="1"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="8dp"
+                android:animateLayoutChanges="true"
+                android:background="#FFFFFF"
+                android:clickable="true"
+                app:cardBackgroundColor="#979494"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                android:focusable="true"
+                tools:targetApi="lollipop">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/one"
+                        android:layout_width="128dp"
+                        android:layout_height="78dp"
+                        android:clickable="true"
+                        android:cursorVisible="true"
+                        android:gravity="center"
+                        android:text="fever"
+                        android:textAllCaps="true"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textStyle="bold"
+                        android:focusable="true"
+                        tools:ignore="HardcodedText,TextViewEdits" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/c2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_rowWeight="1"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="8dp"
+                android:animateLayoutChanges="true"
+                android:clickable="true"
+                app:cardBackgroundColor="#959090"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                tools:targetApi="lollipop"
+                android:focusable="true">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/two"
+                        android:layout_width="130dp"
+                        android:layout_height="77dp"
+                        android:clickable="true"
+                        android:cursorVisible="true"
+                        android:gravity="center"
+                        android:text="Headache"
+                        android:textAllCaps="true"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textStyle="bold"
+                        android:focusable="true"
+                        tools:ignore="HardcodedText,TextViewEdits" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/c3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="1"
+                android:layout_rowWeight="1"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="8dp"
+                android:animateLayoutChanges="true"
+                android:clickable="true"
+                app:cardBackgroundColor="#AFABAB"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                tools:targetApi="lollipop"
+                android:focusable="true">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/three"
+                        android:layout_width="114dp"
+                        android:layout_height="84dp"
+                        android:gravity="center"
+                        android:text="stuffy nose"
+                        android:textAllCaps="true"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/c4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="1"
+                android:layout_rowWeight="1"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="8dp"
+                android:animateLayoutChanges="true"
+                android:clickable="true"
+                app:cardBackgroundColor="#AFACAC"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                tools:targetApi="lollipop"
+                android:focusable="true">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/four"
+                        android:layout_width="114dp"
+                        android:layout_height="84dp"
+                        android:gravity="center"
+                        android:text="muscle and joint pains"
+                        android:textAllCaps="true"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/c5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="2"
+                android:layout_rowWeight="1"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="8dp"
+                android:animateLayoutChanges="true"
+                app:cardBackgroundColor="#B5B0B0"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                tools:targetApi="lollipop">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/five"
+                        android:layout_width="114dp"
+                        android:layout_height="84dp"
+                        android:gravity="center"
+                        android:text="apetite"
+                        android:textAllCaps="true"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/c6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="2"
+                android:layout_rowWeight="1"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="8dp"
+                android:animateLayoutChanges="true"
+                app:cardBackgroundColor="#AFAAAA"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                tools:targetApi="lollipop">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/six"
+                        android:layout_width="114dp"
+                        android:layout_height="84dp"
+                        android:gravity="center"
+                        android:text="high temperature"
+                        android:textAllCaps="true"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/c7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="3"
+                android:layout_rowWeight="1"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="8dp"
+                android:animateLayoutChanges="true"
+                android:clickable="true"
+                app:cardBackgroundColor="#A8A3A3"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                tools:targetApi="lollipop"
+                android:focusable="true">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/seven"
+                        android:layout_width="114dp"
+                        android:layout_height="84dp"
+                        android:gravity="center"
+                        android:text="Dry Cough"
+                        android:textAllCaps="true"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/c8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="3"
+                android:layout_rowWeight="1"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="8dp"
+                android:animateLayoutChanges="true"
+                android:clickable="true"
+                app:cardBackgroundColor="#B6B1B1"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                tools:targetApi="lollipop"
+                android:focusable="true">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/eight"
+                        android:layout_width="114dp"
+                        android:layout_height="84dp"
+                        android:gravity="center"
+                        android:text="nasal congestion"
+                        android:textAllCaps="true"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/c9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="4"
+                android:layout_rowWeight="1"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="8dp"
+                android:animateLayoutChanges="true"
+                android:clickable="true"
+                app:cardBackgroundColor="#A6A1A1"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                tools:targetApi="lollipop"
+                android:focusable="true">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/nine"
+                        android:layout_width="114dp"
+                        android:layout_height="84dp"
+                        android:gravity="center"
+                        android:text="shortness of breath"
+                        android:textAllCaps="true"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/c10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="4"
+                android:layout_rowWeight="1"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="8dp"
+                android:animateLayoutChanges="true"
+                android:clickable="true"
+                app:cardBackgroundColor="#A6A1A1"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                tools:targetApi="lollipop"
+                android:focusable="true">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/ten"
+                        android:layout_width="114dp"
+                        android:layout_height="84dp"
+                        android:gravity="center"
+                        android:text="confusion"
+                        android:textAllCaps="true"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/c11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="5"
+                android:layout_rowWeight="1"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="8dp"
+                android:animateLayoutChanges="true"
+                android:clickable="true"
+                app:cardBackgroundColor="#A6A1A1"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                tools:targetApi="lollipop"
+                android:focusable="true">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/eleven"
+                        android:layout_width="114dp"
+                        android:layout_height="84dp"
+                        android:gravity="center"
+                        android:text="pain or pressure in chest"
+                        android:textAllCaps="true"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="5"
+                android:layout_rowWeight="1"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="8dp"
+                android:animateLayoutChanges="true"
+                android:clickable="true"
+                app:cardBackgroundColor="#A6A1A1"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                tools:targetApi="lollipop"
+                android:focusable="true">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="114dp"
+                        android:layout_height="84dp"
+                        android:gravity="center"
+                        android:text="vomiting"
+                        android:textAllCaps="true"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/c12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="5"
+                android:layout_rowWeight="1"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="8dp"
+                android:animateLayoutChanges="true"
+                android:clickable="true"
+                app:cardBackgroundColor="#A6A1A1"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                tools:targetApi="lollipop"
+                android:focusable="true">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/twelve"
+                        android:layout_width="114dp"
+                        android:layout_height="84dp"
+                        android:gravity="center"
+                        android:text="skin rashes"
+                        android:textAllCaps="true"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </GridLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/c13"
+            android:layout_row="6"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_margin="8dp"
+            android:animateLayoutChanges="true"
+            android:clickable="true"
+            app:cardBackgroundColor="#A6A1A1"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            tools:ignore="ObsoleteLayoutParam"
+            tools:targetApi="lollipop"
+            android:focusable="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/thirteen"
+                    android:layout_width="match_parent"
+                    android:layout_height="81dp"
+                    android:gravity="center"
+                    android:text="sore throat or pain in throat while swallow"
+                    android:textAllCaps="true"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:paddingLeft="10dp"
+            android:text="\nif you had covid test click on your result"
+            android:textAllCaps="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="300dp"
+            android:layout_height="90dp"
+            android:gravity="center"
+            android:text="positive"
+            android:textAllCaps="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="#6A1C04"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="300dp"
+            android:layout_height="90dp"
+            android:gravity="center"
+            android:paddingStart="10dp"
+            android:paddingLeft="0dp"
+            android:text="negative"
+            android:textAllCaps="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="#09420B"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="191dp"
+            android:layout_height="81dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="20dp"
+            android:text="submit"
+            android:textAllCaps="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#191818"
+            android:textStyle="bold"
+            app:backgroundTint="#3B4A55"
+            app:cornerRadius="30dp"
+            tools:ignore="HardcodedText">
+
+        </Button>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/custom_toast"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="310dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginBottom="1dp"
+    android:background="#2196F3"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/ToastImage"
+        android:layout_width="380dp"
+        android:layout_height="194dp"
+        android:contentDescription="TODO"
+        android:padding="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/ToastText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.366"
+        app:srcCompat="@drawable/social_distance" />
+
+    <TextView
+        android:id="@+id/ToastText"
+        android:layout_width="380dp"
+        android:layout_height="72dp"
+        android:layout_marginBottom="4dp"
+        android:padding="1dp"
+        android:text="                Infected Person is Nearby \n        Please Maintain Social Distancing"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
